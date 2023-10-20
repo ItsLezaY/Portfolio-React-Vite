@@ -439,7 +439,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -582,6 +582,12 @@ section {
   z-index: 1;
 }
 
+.fixed-size-img {
+  height: 245px; /* Adjust the height to your desired size */
+  width: 100%; /* This ensures the image takes up the full width of its container */
+  object-fit: cover; /* This ensures the image covers the specified dimensions */
+}
+
 .portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.5);
@@ -605,6 +611,7 @@ section {
   transition: all ease-in-out 0.3s;
   display: flex;
   justify-content: center;
+  
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
@@ -615,6 +622,8 @@ section {
   transition: 0.3s;
   width: 50%;
 }
+
+
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: rgba(20, 157, 221, 0.95);
@@ -1010,7 +1019,7 @@ section {
   padding: 10px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type=button] {
   background: #149ddd;
   border: 0;
   padding: 10px 24px;
@@ -1019,7 +1028,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type=button]:hover {
   background: #37b3ed;
 }
 
