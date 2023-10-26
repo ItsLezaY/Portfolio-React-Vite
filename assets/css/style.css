@@ -441,6 +441,7 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -1121,4 +1122,27 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+.horizontal-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.horizontal-list li {
+  margin-right: 10px; /* Adjust spacing between items */
+  position: relative; /* Position relative for absolute positioning of lines */
+}
+
+.horizontal-list li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  margin-right: -7px;
+  height: 60px; /* Adjust the height of the line as needed */
+  background-color: #149ddd; /* Change the color of the line as needed */
 }
